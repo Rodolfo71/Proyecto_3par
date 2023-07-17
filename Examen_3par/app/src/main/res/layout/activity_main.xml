@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewUsuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE USUARIO"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsuarios"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/textViewEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNombre"
+        android:hint="Edad"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/textViewDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEdad"
+        android:hint="Dirección"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDireccion"
+        android:hint="Teléfono"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/textViewTelefonoEmergencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTelefono"
+        android:hint="Teléfono Emergencia"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/textViewFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTelefonoEmergencia"
+        android:hint="Ruta foto"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/textContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFoto"
+        android:hint="Contraseña"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/textRol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textContrasena"
+        android:hint="Ingresa:
+        1=Jugador,
+        2=Capitan
+        3=Árbitro"
+        android:textColor="@color/black"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/cajabotones4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textRol">
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="35sp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#53AF4C"
+            android:text="REGISTRAR" />
+
+        <Button
+            android:id="@+id/buttonSalir"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="35dp"
+            android:text="SALIR"
+            android:backgroundTint="#E91E1E"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
